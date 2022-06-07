@@ -18,7 +18,11 @@ body {
 }
 
 #fish-tank-glass {
+  display: flex;
   position: absolute;
+  flex-direction:column-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
   top: 12.5%;
   left: 7.5%;
   
@@ -29,6 +33,17 @@ body {
 }
 
 img {
+  position: relative;
+  
   width: 50px;
   height: 30px;
+
+}
+
+@keyframes driftLeft {
+  0%   {right: 0px;}
+  25%  {right: 200px;}
+  50%  {right: 100px;}
+  75%  {right: 200px;}
+  100% {right: 0px;}
 }
