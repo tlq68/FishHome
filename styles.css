@@ -12,7 +12,7 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 90%;
   height: 300px;
   background-color: black;
 }
@@ -24,9 +24,9 @@ body {
   justify-content: space-around;
   align-items: flex-end;
   top: 12.5%;
-  left: 7.5%;
+  left: 10%;
   
-  width: 85%;
+  width: 80%;
   height: 75%;
 
   background-color: rgba(106, 106, 197, 0.651);
@@ -37,13 +37,69 @@ img {
   
   width: 50px;
   height: 30px;
+  animation: driftLeft 5s infinite;
+}
 
+.left-fish {
+  
+  
+  animation: driftLeft 10s infinite;
+}
+
+.right-fish {
+  color: red;
+  position: absolute;
+  animation: driftRight 10s infinite;
+}
+
+.red-fish {
+  position: absolute;
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/RedCircle.png');
+  background-repeat: no-repeat;
+  left: 0;
+  width: 272px;
+  height: 134px;
+  transform: scale(.3);
+}
+
+.purple-fish {
+  position: absolute;
+  top: -20px;
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/PurpleCircle.png');
+  background-repeat: no-repeat;
+  left: 0;
+  width: 371px;
+  height: 147px;
+  transform: scale(.3);
+}
+
+.blue-fish {
+  position: absolute;
+  top: 70px;
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/BlueCircle.png');
+  background-repeat: no-repeat;
+  left: 0;
+  width: 473px;
+  height: 204px;
+  transform: scale(.3);
 }
 
 @keyframes driftLeft {
-  0%   {right: 0px;}
-  25%  {right: 200px;}
-  50%  {right: 100px;}
-  75%  {right: 200px;}
-  100% {right: 0px;}
+  0%   {left: 200px;}
+  25%  {left: -50px;}
+  50%  {left: 100%;}
+  75%  {left: -50px;}
+  80%  {opacity: 1;}
+  90%  {opacity: 0;}
+  100% {left: 200px;}
+}
+
+@keyframes driftRight {
+  0%   {left: -50px;}
+  25%  {left: 200px;}
+  50%  {left: 100%;}
+  75%  {left: 200px;}
+  80%  {opacity: 1;}
+  90%  {opacity: 0;}
+  100% {left: -50px;}
 }
