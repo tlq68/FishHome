@@ -7,6 +7,10 @@
  
   const fishPosition = Math.floor(Math.random() * 3)
 
+  const coinFlip = Math.floor(Math.random() * 2)
+
+  console.log(coinFLip > 0 ? 'driftLeft' : 'driftRight')
+
   // fishTankGlass.appendChild()
   console.log(fishTankGlass)
 
@@ -30,7 +34,6 @@
     fishTankGlass.removeChild(document.getElementById('test'))
   }
 
-  //1. Create a new function that returns a promise
   function firstFunction() {
     return new Promise((resolve, reject) => {
         let y = 0
@@ -43,10 +46,8 @@
     })
   }
   
-  //2. Create an async function
   async function secondFunction() {
       console.log('Before promise call.')
-      //3. Await for the first function to complete
       const result = await firstFunction()
       setTimeout(removeFish, 3000)
       secondFunction()

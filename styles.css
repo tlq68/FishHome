@@ -85,21 +85,13 @@ img {
 }
 
 @keyframes driftLeft {
-  0%   {left: 200px;}
-  25%  {left: -50px;}
-  50%  {left: 100%;}
-  75%  {left: -50px;}
-  80%  {opacity: 1;}
-  90%  {opacity: 0;}
-  100% {left: 200px;}
+  0%   {left: 0%;}
+  
+  100% {left: 100%;}
 }
 
 @keyframes driftRight {
-  0%   {left: -50px;}
-  25%  {left: 200px;}
-  50%  {left: 100%;}
-  75%  {left: 200px;}
-  80%  {opacity: 1;}
-  90%  {opacity: 0;}
-  100% {left: -50px;}
+  0%   {left: 100%;}
+  
+  100% {left: 0%;}
 }
