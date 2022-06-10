@@ -20,7 +20,8 @@
     const coinFlip = Math.floor(Math.random() * 2)
 
     testFish.id = `test`
-    testFish.classList.add(arr[fish])
+    // testFish.classList.add(arr[fish])
+    testFish.classList.add('test-fish')
     testFish.classList.add('fish')  
     coinFlip > 0 ? testFish.classList.add('left-fish') : testFish.classList.add('right-fish') 
     fishTankGlass.appendChild(testFish)
