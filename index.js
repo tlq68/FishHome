@@ -42,19 +42,19 @@
         setTimeout(() => {
           const result = Math.floor(Math.random() * 3)
            makeFishes(result)
-           console.log('Loop completed.')  
+          //  console.log('Loop completed.')  
            resolve(y)
         }, 2000)
     })
   }
   
   async function secondFunction() {
-      console.log('Before promise call.')
+      // console.log('Before promise call.')
       const result = await firstFunction()
       setTimeout(removeFish, 3000)
       secondFunction()
-      console.log('Promise resolved: ' + result)
-      console.log('Next step.')
+      // console.log('Promise resolved: ' + result)
+      // console.log('Next step.')
   }; 
 
   

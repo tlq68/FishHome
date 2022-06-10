@@ -52,7 +52,7 @@ img {
 
 .red-fish {
   position: absolute;
-  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/RedCircle.png');
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/images/RedCircle.png');
   background-repeat: no-repeat;
   left: 0;
   width: 272px;
@@ -63,7 +63,7 @@ img {
 .purple-fish {
   position: absolute;
   top: -20px;
-  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/PurpleCircle.png');
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/images/PurpleCircle.png');
   background-repeat: no-repeat;
   left: 0;
   width: 371px;
@@ -74,7 +74,7 @@ img {
 .blue-fish {
   position: absolute;
   top: 70px;
-  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/BlueCircle.png');
+  background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/images/BlueCircle.png');
   background-repeat: no-repeat;
   left: 0;
   width: 473px;
