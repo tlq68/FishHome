@@ -52,7 +52,7 @@
   async function secondFunction() {
       // console.log('Before promise call.')
       const result = await firstFunction()
-      setTimeout(removeFish, 3000)
+      setTimeout(removeFish, 7000)
       secondFunction()
       // console.log('Promise resolved: ' + result)
       // console.log('Next step.')
