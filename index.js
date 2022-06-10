@@ -18,11 +18,15 @@
   const makeFishes = (fish) => {
     const testFish = document.createElement('img')
     const coinFlip = Math.floor(Math.random() * 2)
+    let direction;
+    direction = coinFlip > 0 ? 'left' : 'right'
+    console.log(direction)
 
     testFish.id = `test`
     // testFish.classList.add(arr[fish])
     testFish.classList.add('test-fish')
-    testFish.classList.add('fish')  
+    testFish.classList.add('fish') 
+
     coinFlip > 0 ? testFish.classList.add('left-fish') : testFish.classList.add('right-fish') 
     fishTankGlass.appendChild(testFish)
       
