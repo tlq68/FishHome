@@ -37,7 +37,6 @@ img {
   
   width: 50px;
   height: 30px;
-  animation: driftLeft 5s infinite;
 }
 
 .left-fish {
@@ -47,8 +46,7 @@ img {
 }
 
 .right-fish {
-  color: red;
-  position: absolute;
+ 
   animation: driftRight 10s infinite;
 }
 

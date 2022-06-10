@@ -7,9 +7,8 @@
  
   const fishPosition = Math.floor(Math.random() * 3)
 
-  const coinFlip = Math.floor(Math.random() * 2)
+  
 
-  console.log(coinFLip > 0 ? 'driftLeft' : 'driftRight')
 
   // fishTankGlass.appendChild()
   console.log(fishTankGlass)
@@ -18,11 +17,14 @@
   
   const makeFishes = (fish) => {
     const testFish = document.createElement('img')
+    const coinFlip = Math.floor(Math.random() * 2)
+
     testFish.id = `test`
-  testFish.classList.add(arr[fish])
-  testFish.classList.add('fish')  
-  fishTankGlass.appendChild(testFish)
-    
+    testFish.classList.add(arr[fish])
+    testFish.classList.add('fish')  
+    coinFlip > 0 ? testFish.classList.add('left-fish') : testFish.classList.add('right-fish') 
+    fishTankGlass.appendChild(testFish)
+      
   
   }
 
