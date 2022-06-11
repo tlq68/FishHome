@@ -97,7 +97,7 @@ img {
 @keyframes driftLeft {
   0%   {left: 0%;}
   
-  100% {left: 95%;}
+  100% {left: 93.5%;}
 }
 
 @keyframes driftRight {
