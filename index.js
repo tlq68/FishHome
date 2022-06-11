@@ -5,7 +5,7 @@
   const fishTankGlass = document.getElementById('fish-tank-glass');
 
  
-  const fishPosition = Math.floor(Math.random() * 3)
+
 
   
 
@@ -18,13 +18,14 @@
   const makeFishes = (fish) => {
     const testFish = document.createElement('img')
     const coinFlip = Math.floor(Math.random() * 2)
+    const fishPosition = Math.floor(Math.random() * 3)
     let direction;
     direction = coinFlip > 0 ? 'left' : 'right'
     console.log(direction)
 
     testFish.id = `test`
     // testFish.classList.add(arr[fish])
-    testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-Fish-2-50px.gif)`
+    testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-Fish-${fishPosition+1}-50px.gif)`
     testFish.classList.add('test-fish')
     testFish.classList.add('fish') 
 
@@ -35,7 +36,6 @@
   }
 
   
- console.log(fishPosition)
   
 
   const removeFish = async () => {
