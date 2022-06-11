@@ -24,6 +24,7 @@
 
     testFish.id = `test`
     // testFish.classList.add(arr[fish])
+    testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-Fish-2-50px.gif)`
     testFish.classList.add('test-fish')
     testFish.classList.add('fish') 
 
