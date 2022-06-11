@@ -19,6 +19,7 @@
     const testFish = document.createElement('img')
     const coinFlip = Math.floor(Math.random() * 2)
     const fishPosition = Math.floor(Math.random() * 3)
+    const horizontalFishPosition = Math.floor(Math.random() * 77) + .5
     let direction;
     direction = coinFlip > 0 ? 'left' : 'right'
     console.log(direction)
@@ -26,6 +27,7 @@
     testFish.id = `test`
     // testFish.classList.add(arr[fish])
     testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-Fish-${fishPosition+1}-50px.gif)`
+    testFish.style.top = `${horizontalFishPosition}%`
     testFish.classList.add('test-fish')
     testFish.classList.add('fish') 
 
