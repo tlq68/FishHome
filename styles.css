@@ -34,7 +34,8 @@ body {
 
 img {
   position: relative;
-  
+  border: none;
+  outline: 0;
   width: 50px;
   height: 30px;
 }
@@ -44,10 +45,12 @@ img {
   position: absolute;
   /* background-image: url('https://raw.githubusercontent.com/tlq68/FishHome/main/images/Left-Fish-2-50px.gif'); */
   background-repeat: no-repeat;
+  border-radius: 100%;
+  outline: none;
   left: 0;
   top: .5%;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   /* transform: scale(.5); */
 }
 
