@@ -26,7 +26,7 @@
 
     testFish.id = `test`
     // testFish.classList.add(arr[fish])
-    testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-Fish-${fishPosition+1}-50px.gif)`
+    testFish.style.backgroundImage = `url(https://raw.githubusercontent.com/tlq68/FishHome/main/images/${direction}-fish-${fishPosition+1}-50px.gif)`
     testFish.style.top = `${verticalFishPosition}%`
     testFish.classList.add('test-fish')
     testFish.classList.add('fish') 
